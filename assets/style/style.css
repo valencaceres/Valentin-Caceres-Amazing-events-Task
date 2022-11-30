@@ -1,18 +1,166 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-#logo{
-    height: 50px;
+#logo {
+  height: 50px;
 }
-#lettercolor{
-    color: white;
+#lettercolor {
+  color: white;
 }
-header{
-    height: 20vh;
+header {
+  height: 20vh;
+  align-items: center;
+}
+main {
+  min-height: 500px;
+}
+#img {
+  height: 200px;
+  object-fit: contain;
+}
+footer {
+  height: 70px;
+}
+footer > a {
+  height: 50px;
+}
+.image {
+  height: 50px;
+}
+table {
+  margin: 20px;
+}
+
+th {
+  height: 40px;
+}
+td {
+  height: 40px;
+  border: 3px solid black;
+}
+#details{
+    height: 500px;
     align-items: center;
 }
-main{
-    height: 40vh;
+#paragraph{
+width: 40%;
+text-align: center;
+}
+#detailsimg{
+    width: 40%;
+}
+#image{
+    width: 500px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  height: 300px;
+  width: 400px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 8px 8px 8px black;
+}
+#submit {
+  width: 100px;
+  margin-top: 15px;
+  align-self: flex-end;
+}
+#firstCard {
+  background-color: #cc0052;
+  box-shadow: 5px 5px 5px black;
+}
+#sndCard {
+  background-color: #cc0052;
+  box-shadow: 5px 5px 5px black;
+}
+#thirdCard {
+  background-color: #cc0052;
+  box-shadow: 5px 5px 5px black;
+}
+#fourthCard {
+  background-color: #cc0052;
+  box-shadow: 5px 5px 5px black;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .label {
+    font-size: 10px !important;
+  }
+  #card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .input1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 94%;
+  }
+  .input2 {
+    width: 94%;
+    display: flex;
+    justify-content: center;
+  }
+  #firstCard {
+    width: 286px !important;
+    margin-bottom: 20px;
+  }
+  #sndCard {
+    margin-bottom: 20px;
+  }
+  #thirdCard {
+    margin-bottom: 20px;
+  }
+  form{
+    width: 280px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  #navlogo {
+    width: 30%;
+  }
+  #menu {
+    display: flex;
+    justify-content: end;
+    width: 50% !important;
+  }
+  #card {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #firstCard {
+    width: 288px !important;
+    margin-bottom: 20px;
+  }
+  #sndCard {
+    margin-bottom: 20px;
+  }
+  #thirdCard {
+    margin-bottom: 20px;
+  }
+  #fourthCard {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  main {
+    min-height: 700px;
+  }
 }
