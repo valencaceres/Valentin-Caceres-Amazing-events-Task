@@ -20,6 +20,18 @@ main {
   height: 200px;
   object-fit: contain;
 }
+#img1 {
+  height: 200px;
+  object-fit: contain;
+}
+#img2 {
+  height: 200px;
+  object-fit: contain;
+}
+#img3 {
+  height: 200px;
+  object-fit: contain;
+}
 footer {
   height: 70px;
 }
@@ -72,18 +84,22 @@ text-align: center;
 #firstCard {
   background-color: #cc0052;
   box-shadow: 5px 5px 5px black;
+  width: 18rem;
 }
 #sndCard {
   background-color: #cc0052;
   box-shadow: 5px 5px 5px black;
+  width: 18rem;
 }
 #thirdCard {
   background-color: #cc0052;
   box-shadow: 5px 5px 5px black;
+  width: 18rem;
 }
 #fourthCard {
   background-color: #cc0052;
   box-shadow: 5px 5px 5px black;
+  width: 18rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   form {
@@ -97,7 +113,7 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .label {
+  label {
     font-size: 10px !important;
   }
   #card {
