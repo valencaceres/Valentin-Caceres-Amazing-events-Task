@@ -81,26 +81,14 @@ text-align: center;
   margin-top: 15px;
   align-self: flex-end;
 }
-#firstCard {
+#cards{
   background-color: #cc0052;
   box-shadow: 5px 5px 5px black;
   width: 18rem;
+  height: 400px;
+  margin: 10px;
 }
-#sndCard {
-  background-color: #cc0052;
-  box-shadow: 5px 5px 5px black;
-  width: 18rem;
-}
-#thirdCard {
-  background-color: #cc0052;
-  box-shadow: 5px 5px 5px black;
-  width: 18rem;
-}
-#fourthCard {
-  background-color: #cc0052;
-  box-shadow: 5px 5px 5px black;
-  width: 18rem;
-}
+
 @media (min-width: 320px) and (max-width: 767px) {
   form {
     display: flex;
@@ -133,16 +121,11 @@ text-align: center;
     display: flex;
     justify-content: center;
   }
-  #firstCard {
+  #cards {
     width: 286px !important;
     margin-bottom: 20px;
   }
-  #sndCard {
-    margin-bottom: 20px;
-  }
-  #thirdCard {
-    margin-bottom: 20px;
-  }
+
   form{
     width: 280px !important;
   }
@@ -161,19 +144,11 @@ text-align: center;
     justify-content: center;
     flex-wrap: wrap;
   }
-  #firstCard {
+  #cards {
     width: 288px !important;
     margin-bottom: 20px;
   }
-  #sndCard {
-    margin-bottom: 20px;
-  }
-  #thirdCard {
-    margin-bottom: 20px;
-  }
-  #fourthCard {
-    margin-bottom: 20px;
-  }
+
 }
 @media (min-width: 1440px) {
   main {
