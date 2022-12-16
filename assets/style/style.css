@@ -40,6 +40,7 @@ footer > a {
 }
 .image {
   height: 50px;
+
 }
 table {
   margin: 20px;
@@ -59,12 +60,17 @@ td {
 #paragraph{
 width: 40%;
 text-align: center;
+padding: 20px;
+border-radius: 10px;
+background-color: rgba(151, 151, 151, 0.815);
 }
 #detailsimg{
     width: 40%;
 }
 #image{
     width: 500px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
 }
 #form {
   display: flex;
@@ -83,10 +89,12 @@ text-align: center;
 }
 #cards{
   background-color: #cc0052;
+  box-sizing: content-box;
   box-shadow: 5px 5px 5px black;
   width: 18rem;
   height: 400px;
   margin: 10px;
+  padding: 20px
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
