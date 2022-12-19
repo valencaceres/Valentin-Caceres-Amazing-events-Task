@@ -1,4 +1,11 @@
-let events = data.events
+const url = 'https://amazing-events.onrender.com/api/events'
+let data;
+fetch(url)
+  .then(res => res.json())
+  .then(events => {
+    data = events.events
+  })
+  .catch(err => console.log(err))
 
 export function render(list, container) {
   container.innerHTML = ''
@@ -85,9 +92,9 @@ export function renderPast(lista, container){
 container.innerHTML = html
 }
 
-export function renderCheck(input, contenedor) {
+export function renderCheck(list, contenedor) {
    let html = "";
-   let newSet = new Set(input.map((element) => element.category));
+   let newSet = new Set(list.map((element) => element.category));
    let categories = Array.from(newSet);
    categories.forEach((element) => {
      html += `<input type="checkbox" id="${element}" value='${element}'/>
@@ -97,7 +104,6 @@ export function renderCheck(input, contenedor) {
 }
 
 export function filtrarCards(eventos) {
-  let html  = ''
    const checkbox = document.querySelectorAll(
      "input[type = 'checkbox']:checked"
    );
@@ -110,7 +116,7 @@ export function filtrarCards(eventos) {
      )
      .flat();
    if (!checkbox.length) {
-     return events;
+     return data;
    } 
    else {
      return filtro;
@@ -123,9 +129,4 @@ export function filtrarPorBusqueda(eventos, value) {
   );
 }
 
-export function filtrar(eventos, $SearchContainer) {
-  let filtrarPorGenero = filtrarCards(eventos);
-  let filtroBusqueda =  filtrarPorBusqueda(filtrarPorGenero, $SearchContainer.value);
-   return filtroBusqueda;
-}
 

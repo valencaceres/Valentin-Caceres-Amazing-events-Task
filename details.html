@@ -30,9 +30,29 @@
             </ul>
         </div>
     </nav>
-    <header class="bg-black d-flex justify-content-center">
-        <a href="#" class="text-danger fs-1 text-decoration-none">Details</a>
-      </header>
+    <header class="bg-black d-flex justify-content-evenly aling-items-center w-100">
+      <div id="carousel" class="carousel slide d-flex flex-warp justify-content-evenly w-100" data-bs-ride="carousel">
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <a href="index.html" class="d-block w-100  text-danger fs-1 text-decoration-none">Home</a>
+            </div>
+            <div class="carousel-item">
+              <a href="upcomingEvents.html" class="d-block w-100  text-danger fs-1 text-decoration-none">Upcoming Events</a>
+            </div>
+            <div class="carousel-item">
+              <a href="pastEvents.html" class="d-block w-100 text-danger fs-1 text-decoration-none">Past Events</a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </header>
       <main class="bg-secondary ">
         <div class="d-flex justify-content-around" id="details"> 
         </div>
@@ -49,7 +69,6 @@
         </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./scripts/data.js"></script>
     <script src="./scripts/details.js"></script>
 </body>
 </html>

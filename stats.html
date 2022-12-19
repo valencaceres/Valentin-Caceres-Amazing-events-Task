@@ -60,7 +60,8 @@
           </div>
     </header>
     <main class="bg-secondary d-flex justify-content-center">
-      <table>
+      <div>
+        <table>
           <tr class="bg-danger border border-dark">
             <th>
               Events Stadistics
@@ -69,80 +70,53 @@
             <th></th>
           </tr>
         <tr>
-          <td class="border border-dark bg-warning">Lorem ipsum dolor sit amet..</td>
-          <td class="border border-dark bg-warning">Lorem ipsum dolor sit amet.</td>
-          <td class="border border-dark bg-warning">Lorem ipsum dolor sit amet.</td>
+          <td class="border border-dark bg-warning">Event whit more assistance percentage</td>
+          <td class="border border-dark bg-warning">Event whit less assistance percentage</td>
+          <td class="border border-dark bg-warning">Event whit more people capacity</td>
         </tr>
-        <tr>
-          <td class="border border-dark bg-warning">Lorem ipsum dolor sit amet.</td>
-          <td class="border border-dark bg-warning">Lorem ipsum dolor sit amet.</td>
-          <td class="border border-dark bg-warning">Lorem ipsum dolor sit amet.</td>
+        <tr id="firstStat">
         </tr>
-        <tr class="bg-danger border border-dark">
-        <th>
-          Upcoming events stadistics by category
-        </th>
-        <th></th>
-        <th></th>
-        </tr>
-        <tr>
+        </table>
+          <table>
+            <tr class="bg-danger border border-dark">
+          <th>
+              Upcoming events stadistics by category
+          </th>
+          <th></th>
+          <th></th>
+          </tr>
           <td class="border border-dark bg-danger">Categories</td>
           <td class="border border-dark bg-danger">Revenues</td>
           <td class="border border-dark bg-danger">Percentage of attendance</td>
         </tr>
-        <tr>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-        </tr>
-        <tr class="bg-danger border border-dark">
-          <th>
-            Past events stadistics by category
-          </th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-danger">Categories</td>
-          <td class="border border-dark bg-danger">Revenues</td>
-          <td class="border border-dark bg-danger">Percentage of attendance </td>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-          <td class="border border-dark bg-warning"></td>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-        </tr>
-        <tr>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-          <td class="border border-dark bg-warning bg-warning"></td>
-        </tr>
-      </table>
+        <tbody id="secondStat">
+        </tbody>
+          </table>
+          <table>
+          <tr class="bg-danger border border-dark">
+            <th>
+              Past events stadistics by category
+            </th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td class="border border-dark bg-danger">Categories</td>
+            <td class="border border-dark bg-danger">Revenues</td>
+            <td class="border border-dark bg-danger">Percentage of attendance</td>
+          </tr>
+          <tbody id="thirdStat">
+                      <tr>
+            <td class="border border-dark bg-danger">Categories</td>
+            <td class="border border-dark bg-danger">Revenues</td>
+            <td class="border border-dark bg-danger">Percentage of attendance </td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+ 
+
+   
     </main>
     <footer class="bg-dark d-flex justify-content-between">
       <div class="d-flex align-items-center justify-content-between">
@@ -154,6 +128,7 @@
         <h2 class="text-white">Cohort 39/40</h2>
       </div>
     </footer>
+    <script src="./scripts/stats.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
