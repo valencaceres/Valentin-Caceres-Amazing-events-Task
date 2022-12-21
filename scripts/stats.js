@@ -16,25 +16,25 @@ fetch(url)
 
 function Stat(events, container){
     let html = ''
-    let percentage = events.map((element) => {
+    let total = events.map((element) => {
     return {nombre: element.name, porcentaje : element.assistance / element.capacity * 100}}).filter(element => element.porcentaje)
-    let max = Math.max(...percentage.map(element => element.porcentaje))
-    max = percentage.find(element => element.porcentaje === max)
-    let min = Math.min(...percentage.map(element => element.porcentaje))
-    min = percentage.find(element => element.porcentaje === min)
-    html = `<td class="border border-dark bg-warning">${max.nombre} ${max.porcentaje.toFixed(2)}%</td>
-    <td class="border border-dark bg-warning">${min.nombre} ${min.porcentaje.toFixed(2)}%</td>` 
-    container.innerHTML = html
+      let max = Math.max(...total.map(element => element.porcentaje))
+        max = total.find(element => element.porcentaje === max)
+      let min = Math.min(...total.map(element => element.porcentaje))
+        min = total.find(element => element.porcentaje === min)
+          html = `<td class="border border-dark bg-warning">${max.nombre} ${max.porcentaje.toFixed(2)}%</td>
+          <td class="border border-dark bg-warning">${min.nombre} ${min.porcentaje.toFixed(2)}%</td>` 
+            container.innerHTML = html
   }
 
 function capacity(events,container){
     let html = ''
     let capacidad = events.map(element => {
-     return  {nombre:element.name, capacidad:element.capacity}})
-     let math = Math.max(...capacidad.map(element => element.capacidad))
-     let result = capacidad.find(element => element.capacidad === math)
-     html = `<td class="border border-dark bg-warning">${result.nombre} ${result.capacidad} capacity</td>`
-      container.innerHTML += html
+      return  {nombre:element.name, capacidad:element.capacity}})
+        let math = Math.max(...capacidad.map(element => element.capacidad))
+        let result = capacidad.find(element => element.capacidad === math)
+          html = `<td class="border border-dark bg-warning">${result.nombre} ${result.capacidad} capacity</td>`
+            container.innerHTML += html
     }
     
 function upcomingStats(events, container){

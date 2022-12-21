@@ -129,4 +129,10 @@ export function filtrarPorBusqueda(eventos, value) {
   );
 }
 
+export function filtrar(eventos, $SearchContainer) {
+  let filtrarPorGenero = filtrarCards(eventos);
+  let filtroBusqueda =  filtrarPorBusqueda(filtrarPorGenero, $SearchContainer.value);
+   return filtroBusqueda;
+}
+
 
